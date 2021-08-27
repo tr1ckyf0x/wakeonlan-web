@@ -69,11 +69,9 @@ class SupportForm extends React.Component<any,State> {
                 <div className="field-container" id="message-field-container">
                     <textarea className="field textarea-element" name="message" placeholder="message" value={this.state.message} onChange={this.handleChange} />
                 </div>
-                {/*<div className="empty-column" id="empty-left-column" />*/}
-                {/*<div className="empty-column" id="empty-right-column" />*/}
-                <div id="submit-button" onClick={this.handleSubmit}>
-                    <p className="noselect">Send</p>
-                </div>
+                <button type="button" id="submit-button" onClick={this.handleSubmit}>
+                    Send
+                </button>
             </div>
         );
     }
