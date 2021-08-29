@@ -51,7 +51,7 @@ class SupportForm extends React.Component<any,State> {
                 message: this.state.message
             })
         };
-        const response = await fetch('http://127.0.0.1:8080/api/v1/feedback', requestOptions);
+        const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/feedback`, requestOptions);
         const data = await response.json();
         console.log(data);
     }
