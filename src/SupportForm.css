@@ -1,13 +1,13 @@
 .SupportForm {
-    width: 50%;
+    width: 100%;
     display: grid;
     border-radius: 36px;
-    border: 12px solid #303136;
-    background: #303136;
-    box-shadow: 2px 2px 4px #232323,
-    -2px -2px 4px #3E3F46,
-    2px 2px 4px #232323 inset,
-    -2px -2px 4px #3E3F46 inset;
+    border: 12px solid #E4E5E7;
+    background: #E4E5E7;
+    box-shadow: 2px 2px 4px #A9A9AB,
+    -2px -2px 4px #FFFFFF,
+    2px 2px 4px #A9A9AB inset,
+    -2px -2px 4px #FFFFFF inset;
 
     padding: 16pt;
     column-gap: 16pt;
@@ -19,22 +19,22 @@
     width: auto;
     display: flex;
 
-    background: #303136;
+    background: #E4E5E7;
     border-radius: 12px;
-    box-shadow: inset 2px 2px 4px #232323,
-    inset -2px -2px 4px #3E3F46;
+    box-shadow: inset 2px 2px 4px #A9A9AB,
+    inset -2px -2px 4px #FFFFFF;
 }
 
 .field {
     outline: none;
     border: none;
-    color: #595959;
+    color: #93959A;
     background: none;
 
     padding: 0 25pt 0 25pt;
 
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .field-container .input-element {
@@ -42,7 +42,7 @@
 }
 
 .field-container ::placeholder {
-    color: #595959;
+    color:#93959A;
 }
 
 .field-container .textarea-element {
@@ -81,12 +81,16 @@
 
     border-radius: 12px;
     border: none;
-    background: #303136;
-    box-shadow: 2px 2px 4px #232323,
-    -2px -2px 4px #3E3F46;
+    background: #E4E5E7;
+    box-shadow: 2px 2px 4px #A9A9AB,
+    -2px -2px 4px #FFFFFF;
+
+    font-weight: bold;
+    font-size: 14px;
+    color: #636469;
 }
 
 #submit-button:active {
-    box-shadow: inset 2px 2px 4px #232323,
-    inset -2px -2px 4px #3E3F46;
+    box-shadow: inset 2px 2px 4px #A9A9AB,
+    inset -2px -2px 4px #FFFFFF;
 }
