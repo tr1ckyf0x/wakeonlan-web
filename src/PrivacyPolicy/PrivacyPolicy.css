@@ -1,0 +1,26 @@
+.PrivacyPolicy {
+  width: 45%;
+
+  color: #636469;
+}
+
+.PrivacyPolicy summary {
+  color: #636469;
+  font-size: 32px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.PrivacyPolicy .content h2 {
+  font-size: 21px;
+}
+
+.PrivacyPolicy .content a {
+  text-decoration: none;
+}
+
+.PrivacyPolicy .content p,
+.PrivacyPolicy .content ul {
+  font-size: 14px;
+}
