@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './SupportForm.css';
 import Reaptcha from 'reaptcha';
 
@@ -9,7 +9,7 @@ interface State {
     captcha: string;
 }
 
-class SupportForm extends React.Component<any, State> {
+export class SupportForm extends React.Component<any, State> {
 
     captcha: Reaptcha | null;
 
@@ -73,7 +73,7 @@ class SupportForm extends React.Component<any, State> {
 
     render() {
         return (
-            <Fragment>
+            <>
                 <div className="SupportForm">
                     <div className="field-container" id="name-field-container">
                         <input className="field input-element" name="name" type="text" placeholder="Name" value={this.state.name} onChange={this.handleChange} />
@@ -94,9 +94,7 @@ class SupportForm extends React.Component<any, State> {
                     onVerify={this.onVerify}
                     size='invisible'
                 />
-            </Fragment>
+            </>
         );
     }
 }
-
-export default SupportForm;
